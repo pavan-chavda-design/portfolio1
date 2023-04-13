@@ -1,0 +1,49 @@
+.row {
+    &_wrapper {
+        &-bg {
+            padding: $s-24;
+            background-color: $gray-light;
+            border-radius: $br-8;
+            box-shadow: $box-shadow;
+        }
+
+        &+& {
+            margin-top: $s-96;
+        }
+    }
+
+    &_heading {
+        margin-bottom: $s-8;
+
+        &-main {
+            margin-bottom: $s-48;
+        }
+    }
+
+    &_list {
+        list-style: disc;
+        margin-left: $s-40;
+
+        >*+* {
+            margin-top: $s-24;
+        }
+
+        &-heading {
+            margin-bottom: $s-24;
+
+            &-none {
+                @extend .row_list-heading;
+
+                &::after {
+                    content: '.';
+                    visibility: hidden;
+                }
+            }
+        }
+        &-para{
+            >*+* {
+                margin-top: $s-43;
+            }
+        }
+    }
+}

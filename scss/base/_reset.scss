@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+::-moz-focus-inner {
+    border: 0;
+}
+
+html {
+    font-size: $main-size;
+    scroll-behavior: smooth;
+
+    @include devices(mob-start) {
+        font-size: calc($main-size + 2px);
+    }
+}
+
+body {
+    font: {
+        size: $fs-32;
+        weight: 400;
+    }
+
+    line-height: $lh;
+    color: $gray;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: $black-100;
+    text-decoration: none;
+    transition: $transition;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    line-height: $lh;
+    color: $black-100;
+    margin: 0;
+}
+
+h1 {
+    font-size: $fs-56;
+}
+
+h2 {
+    font-size: $fs-40;
+}
+
+h3 {
+    font-size: $fs-36;
+}
+
+h4 {
+    font-size: $fs-32;
+}
+
+svg {
+    transition: $transition-btn;
+}

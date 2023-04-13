@@ -1,0 +1,70 @@
+.navbar {
+    &_logo {
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+
+        img {
+            @include size(inRem(42px))
+        }
+
+        span {
+            display: inline-block;
+            vertical-align: middle;
+            padding-left: $s-16;
+            margin-left: $s-16;
+            border-left: $border-primary;
+        }
+    }
+
+    &_icon {
+        >span {
+            display: block;
+            background-color: $black-100;
+            height: inRem(5px);
+        }
+
+        >*+* {
+            margin-top: $s-6;
+        }
+
+        .top,
+        .bottom {
+            width: inRem(30px);
+        }
+
+        .middle {
+            width: inRem(22px);
+            margin-left: auto;
+        }
+    }
+
+    &_list {
+        li {
+            align-self: center;
+            margin-left: $s-48;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+
+        &-offcanvas {
+            height: 100%;
+
+            >*+* {
+                margin-top: $s-48;
+            }
+
+            li {
+                &:last-child {
+                    margin-top: auto;
+                }
+            }
+            a{
+                width:100%;
+                font-size: $fs-40;
+            }
+        }
+    }
+}

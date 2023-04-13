@@ -1,0 +1,11 @@
+.icon{
+    @include size($icon-26);
+}
+
+.icon-48{
+    @include size($icon-48);
+}
+
+.icon_right-8{
+    margin-right: $s-8;
+}

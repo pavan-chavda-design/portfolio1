@@ -1,0 +1,10 @@
+@function inRem($pxSize) {
+    $remSize: calc($pxSize / $main-font-size);
+    @return #{$remSize}rem;
+}
+
+@function get-vw($target){
+    $vw-context: $viewport-vw * 0.01 *1px;
+    @return calc($target / $vw-context) * 1vw;
+    @return $target;
+}

@@ -1,0 +1,74 @@
+.objective {
+    &_section {
+        padding-top: $s-160;
+    }
+
+    &_content {
+        width: 100%;
+        max-width: inRem(593px);
+        @include devices(mobile) {
+            max-width: 100%;
+        }
+
+        >h4 {
+            color: $gray;
+            margin-bottom: $s-96;
+        }
+
+        &_inner {
+            max-width: inRem(380px);
+            @include devices(mobile) {
+                max-width: 100%;
+            }
+
+            >h4 {
+                margin-bottom: $s-20;
+            }
+        }
+    }
+
+    &_grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: inRem(74px);
+
+        @include devices(mobile) {
+            grid-template-columns: auto;
+        }
+    }
+
+    &_img {
+        text-align: right;
+    }
+}
+
+.approach {
+    &_section {
+        padding: $s-96 0;
+    }
+}
+
+.resume_btn {
+    @include fwc($fs-20, 600, $primary-clr);
+    @include border;
+
+    &:first-child {
+        &:active {
+            svg {
+                path {
+                    fill: $gray;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        border-color: $gray;
+
+        svg {
+            path {
+                fill: $white-100;
+            }
+        }
+    }
+}

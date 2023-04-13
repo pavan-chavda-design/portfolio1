@@ -1,0 +1,14 @@
+.objective_content_tags{
+    line-height:0;
+    &-list{
+        display:inline-flex;
+        flex-wrap:wrap;
+        gap:$s-16;
+    }
+    &-items{
+        .badge{
+            @include border($color:$black-100);
+            line-height:normal;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.work {
+    &_section {
+        padding: $s-50 0 $s-96;
+    }
+}
+
+.card {
+    &_wrapper {
+        >*+* {
+            margin-top: $s-24;
+        }
+    }
+
+    &_img {
+        img {
+            @include image(inRem(655px));
+
+            @include devices(mob-start) {
+                max-width: 100%;
+            }
+        }
+    }
+
+    &_details {
+        @include flex;
+    }
+
+    &_content {
+        @include flex($justify: space-between, $direction: column);
+        margin-left: $s-16;
+
+        @include devices(mob-start) {
+            margin-top: $s-16;
+            margin-left: 0;
+        }
+    }
+
+    &_info {
+        font-size: $fs-20;
+        color: $gray;
+    }
+
+    &_tag {
+        color: $primary-clr;
+        margin-bottom: $s-16;
+    }
+
+    &_title {
+        margin-bottom: $s-8;
+    }
+
+    &_actions {
+        @include flex(center);
+        margin-top: $s-16;
+
+        >*+* {
+            margin-left: $s-16;
+        }
+    }
+}

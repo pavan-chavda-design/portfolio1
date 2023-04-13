@@ -1,0 +1,20 @@
+.carousel{
+    &_design{
+        &-mob{
+            img{
+                max-width:inRem(700px);
+                margin-inline:auto; 
+                @include devices(mobile){
+                    max-width: inRem(400px);
+                }
+            }
+        }
+    }
+    &-indicators{
+        margin-bottom: -$s-48;
+        [data-bs-target]{
+            border-radius: $br-8;
+        }
+    }
+   
+}

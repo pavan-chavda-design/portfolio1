@@ -1,0 +1,41 @@
+.intro {
+    &_section {
+        height: 100vh;
+        max-height: inRem(1080px);
+        position: relative;
+
+        @include devices(mob-start) {
+            height: 100dvh;
+            max-height: max-content;
+        }
+    }
+
+    &_hello {
+        font-size: $fs-40;
+    }
+
+    &_text {
+        padding-top: $s-250;
+
+        *+* {
+            margin-top: $s-24;
+        }
+    }
+
+    &_content {
+        margin-top: $s-96;
+
+        &-heading {
+            margin-bottom: $s-8;
+        }
+    }
+
+    &_img {
+        @include position(absolute, null, 0, 0, null);
+        z-index: -1;
+
+        img {
+            @include image(inRem(628px));
+        }
+    }
+}

@@ -1,0 +1,81 @@
+@mixin devices($breakpoint) {
+
+    @if $breakpoint ==wide-screen {
+        @media only screen and (min-width: $wide-screen) {
+            @content;
+        }
+    }
+
+    @if $breakpoint ==s-laptop {
+        @media only screen and (max-width: $s-laptop) {
+            @content;
+        }
+    }
+
+    @if $breakpoint ==tablet {
+        @media only screen and (max-width: $tablet) {
+            @content;
+        }
+    }
+
+    @if $breakpoint ==till-tablet {
+        @media only screen and (max-width: $till-tablet) {
+            @content;
+        }
+    }
+
+    @if $breakpoint ==mob-start {
+        @media only screen and (max-width: $mob-start) {
+            @content;
+        }
+    }
+
+    @if $breakpoint ==mobile {
+        @media only screen and (max-width: $mobile) {
+            @content;
+        }
+    }
+
+    @if $breakpoint ==mid-mobile {
+        @media only screen and (max-width: $mid-mobile) {
+            @content;
+        }
+    }
+}
+
+@mixin position($position: static, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flex($align: null, $justify: null, $direction: null) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+@mixin fwc($font-size, $font-weight: null, $color: null) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color;
+}
+
+@mixin border($width: 1px, $type: solid, $color: $primary-clr) {
+    border: $width $type $color;
+}
+
+@mixin image($mx-width, $height: auto) {
+    width: 100%;
+    max-width: $mx-width;
+    height: $height;
+}

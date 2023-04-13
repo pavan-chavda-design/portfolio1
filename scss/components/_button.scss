@@ -1,0 +1,35 @@
+.btn {
+    &-outline-link {
+        @include button-variant($transparent, $gray, $black-100);
+        @include button-size($s-13, $s-25, $fs-20, $br-8)
+    }
+
+    &_primary {
+        &-text {
+            color: $primary-clr;
+        }
+    }
+
+    &_yellow {
+        background-color: $yellow;
+
+        &:active,
+        &:hover {
+            background-color: $black-100;
+        }
+    }
+
+    &_gray-light {
+        background-color: $gray-light;
+
+        &:hover {
+            color: $white-100;
+            background-color: $primary-clr;
+        }
+    }
+
+    &-icon {
+        display: inline-flex;
+        align-items: center;
+    }
+}

@@ -1,0 +1,58 @@
+.footer {
+    &_section {
+        color: $white-100;
+        padding: $s-100 0 $s-50;
+        background-color: $primary-clr;
+    }
+
+    &_inner {
+        @include flex($justify: space-between, $direction: column);
+        height: calc(100vh - $s-100 - $s-50);
+        max-height: calc(inRem(1080px) - $s-100 - $s-50);
+    }
+
+    &_title {
+        color: $white-100;
+        margin-bottom: $s-45;
+    }
+
+    &_btn {
+        @include button-variant($yellow, $transparent, $black-100, $hover-color: $white-100);
+        font-weight: 500;
+        margin-top: $s-96;
+        border: none;
+    }
+
+    &_btm {
+        @include flex($justify: space-between);
+        margin-top: $s-16;
+
+        @include devices(mid-mobile) {
+            flex-direction: column;
+        }
+    }
+}
+
+.social_navbar {
+    @include flex;
+    @include devices(mid-mobile) {
+        margin-top: $s-16;
+    }
+    &-item {
+        &:not(:first-child) {
+            margin-left: $s-36;
+        }
+    }
+
+    &-icon {
+        display: inline-block;
+
+        &:hover {
+            svg {
+                path {
+                    fill: $yellow;
+                }
+            }
+        }
+    }
+}

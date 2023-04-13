@@ -1,0 +1,4 @@
+.container-pc {
+    @include make-container($gutter: 6.25rem);
+    max-width: calc(1820px + 20px);
+}

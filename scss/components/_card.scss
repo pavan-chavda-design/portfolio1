@@ -1,0 +1,6 @@
+.card{
+    &_item{
+        border:none;
+        box-shadow: var(--pc-card-box-shadow);
+    }
+}

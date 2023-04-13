@@ -1,0 +1,63 @@
+$viewport-vw: 1920;
+$html-size: 14px;
+$main-font-size: 16px;
+$main-size: calc(get-vw($html-size) + 2px);
+
+// Font Family
+$font-family: 'IBM Plex Mono';
+
+// Spacings
+$s-6:inRem(6px);
+$s-8: inRem(8px);
+$s-13: inRem(13px);
+$s-16: inRem(16px);
+$s-20: inRem(20px);
+$s-24: inRem(24px);
+$s-25: inRem(25px);
+$s-36: inRem(36px);
+$s-40:inRem(40px);
+$s-43:inRem(43px);
+$s-45: inRem(45px);
+$s-48: inRem(48px);
+$s-50: inRem(50px);
+$s-96: inRem(96px);
+$s-100: inRem(100px);
+$s-160: inRem(160px);
+$s-185: inRem(185px);
+$s-250: inRem(250px);
+
+// Font Sizes
+$fs-20: inRem(20px);
+$fs-32: inRem(32px);
+$fs-34: inRem(34px);
+$fs-36: inRem(36px);
+$fs-40: inRem(40px);
+$fs-56: inRem(56px);
+
+// Line Height
+$lh: normal;
+
+// Border
+$border-primary: 1px solid $primary-clr;
+$border-gray: 1px solid $gray;
+
+// Icon Size
+$icon-26:inRem(26px);
+$icon-48:inRem(48px);
+
+// Border Radius
+$br-8: inRem(8px);
+
+// Transition
+$transition: all 1s ease;
+$transition-btn: all 0.15s ease-in-out;
+
+// Device Screens 
+$wide-screen: 2000px;
+$main-screen: 1920px;
+$s-laptop: 1024px;
+$tablet: 768px;
+$till-tablet: 767px;
+$mob-start: 576px;
+$mobile: 426px;
+$mid-mobile: 376px; 
